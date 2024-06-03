@@ -1,8 +1,8 @@
 import React from "react";
 
-const addItems = () => {
+const addItems = ({newSubmit, setNewSubmit, handleSubmit}) => {
   return (
-    <form className="addForm">
+    <form className="addForm" onSubmit={handleSubmit}>
       <label htmlFor="addItem">Add Item</label>
       <input
         autoFocus
@@ -10,6 +10,8 @@ const addItems = () => {
         id="addItem"
         placeholder="Add Item"
         required
+        value={newSubmit}
+        onChange={(e)=>setNewSubmit(e.target.value)}
       />
       <button type="submit" aria-label="Add Item">
         +

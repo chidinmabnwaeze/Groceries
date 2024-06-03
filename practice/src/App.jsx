@@ -12,7 +12,9 @@ function App() {
   return (
     <>
     <AddItems
-    newI
+    newSubmit ={newSubmit}
+    setNewSubmit ={setNewSubmit}
+    handleSubmit ={handleSubmit}
     />
 <Practice/>
   <Content/>

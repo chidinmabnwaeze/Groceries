@@ -34,9 +34,10 @@ const Practice = () => {
     localStorage.setItem('groceries', JSON.stringify(listItems))
   }
 
-const [submit, setsubmit] =useState([])
+const [newSubmit, setNewSubmit] =useState('')
 
-  const handleSubmit =(a) =>{
+  const handleSubmit =(e) =>{
+    
     console.log('submitted')
   }
  

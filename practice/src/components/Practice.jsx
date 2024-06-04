@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-// import addItems from "../components/addItems";
+import AddItems from "./AddItems";
+import SearchItem from "./SearchItem";
 
 const Practice = () => {
   const [items, setItems] = useState([
@@ -21,6 +22,16 @@ const Practice = () => {
     }
   ]);
 
+  const [newSubmit, setNewSubmit] =useState('')
+
+  const [search, setSearch] = useState('')
+
+  const addItem =(item)=>{
+    const id =items.length ? items[items.length -1].id + 1 : 1;
+    const myNewSubmit ={id, checked :false, item};
+    const listItems =[...items, myNewSubmit];
+  }
+
   const handleCheck = (id) => {
     const listItems = items.map((item)=> item.id === id ? {...item,checked: !item.checked} : item);
     setItems(listItems);
@@ -34,15 +45,25 @@ const Practice = () => {
     localStorage.setItem('groceries', JSON.stringify(listItems))
   }
 
-const [newSubmit, setNewSubmit] =useState('')
-
   const handleSubmit =(e) =>{
-    
+    e.preventDefault();
+   if(!newSubmit) return;
+   setNewSubmit('')
     console.log('submitted')
   }
  
   return (
     <main>
+        <SearchItem
+        search={search}
+        setSearch ={setSearch}
+        />
+        <AddItems
+         newSubmit ={newSubmit}
+         setNewSubmit ={setNewSubmit}
+         handleSubmit ={handleSubmit}
+        />
+        {/* items={items.filter(item =>((item.item).toLowerCase()))} */}
       <ul>
         {items.map((item) => (
           <li className="item" key={item.id}>

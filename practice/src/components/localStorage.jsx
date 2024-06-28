@@ -11,9 +11,13 @@ const handleSubmit =(e)=>{
 e.preventDefault()
 }
 
+function registerUser (){
+    
+}
+
   return (
     <div className='form'>
-        <form action="" id=''>
+        <form action="" onSubmit={registerUser} >
 <input type="text" placeholder='Enter your username' className='form-control' value={username}
 onChange={(e)=>{setUsernmae(e.target.value)}}
 />

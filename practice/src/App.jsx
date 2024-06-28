@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Content from './components/content'
 import Practice from './components/Practice'
+import Facebook from './components/facebook'
+import LocalStorage from './components/localStorage'
 
 
 function App() {
@@ -11,9 +13,10 @@ function App() {
 
   return (
     <>
-<Practice/>
+{/* <Practice/> */}
   <Content/>
-    
+    {/* <Facebook/> */}
+    <LocalStorage/>
     </>
   )
 }

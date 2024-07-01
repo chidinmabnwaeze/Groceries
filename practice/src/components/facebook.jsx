@@ -21,9 +21,6 @@ getAllUsers = async () =>{
 
 
 
-
-
-
   return (
     <div className="facebook">
       <table>

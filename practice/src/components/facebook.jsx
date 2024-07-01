@@ -12,7 +12,7 @@ const facebook = () => {
 
 let url = "https://jsonplaceholder.org/users/"
 
-// let userInfo ;
+let userInfo ;
 
 getAllUsers = async () =>{
     users = await fetch(url).then((res) => res.json())

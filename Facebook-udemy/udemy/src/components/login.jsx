@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 
 const login = () => {
@@ -18,9 +19,14 @@ const login = () => {
         <input
           type="text"
           placeholder="Enter username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
+       <button 
+       type="submit"
+       className="login-button">
+        LOGIN
+        </button>
       </form>
     </div>
   );

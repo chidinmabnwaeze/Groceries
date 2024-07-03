@@ -1,6 +1,7 @@
 
 import './App.css'
 import Facebook from './components/facebook'
+import Login from "./components/login"
 
 function App() {
  
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Facebook/>
+      <Login/>
     </>
   )
 }

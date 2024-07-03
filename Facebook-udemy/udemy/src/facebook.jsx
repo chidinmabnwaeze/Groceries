@@ -9,9 +9,20 @@ export default function facebook() {
     <form className="form-control">
       <h2>Register</h2>
       <div className="input-section">
-        <input autoFocus type="text" className="username" placeholder="Enter Username" value={username} />
-        <input type="text" className="password" placeholder="Enter Password" value={password} />
-     <input type="submit" />
+        <input
+          autoFocus
+          type="text"
+          className="username"
+          placeholder="Enter Username"
+          value={username}
+        />
+        <input
+          type="text"
+          className="password"
+          placeholder="Enter Password"
+          value={password}
+        />
+        <input type="submit" />
       </div>
     </form>
   );

@@ -3,11 +3,26 @@ import { useState } from 'react'
 
 const todo = () => {
 const [todolist, setTodolist] = useState("")
+const [newInput, setNewInput] = useState("")
 
 const handleTodoSubmit = (e) => {
 e.preventDefault();
 if (handleTodoSubmit === true){
 console.log("todo submitted")
+}
+}
+
+const API_URL ="https://jsonplaceholder.org/users/"
+
+const fetch = async() => {
+try{
+    const response = await fetch(API_URL)
+    if(!response.ok){
+throw Error("Wasn't able to get data") = await response.json()
+    }
+}
+catch{
+setNewInput(err)
 }
 }
 
@@ -25,6 +40,8 @@ console.log("todo submitted")
        <button>Add todo</button>
        
     </form>
+
+
   )
 }
 

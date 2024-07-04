@@ -16,7 +16,7 @@ const login = () => {
         }
     }
 
-    if (i === 1) {
+    if (i ==1) {
       alert("Invalid Login");
     }
      else {

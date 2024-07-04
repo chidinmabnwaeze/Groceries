@@ -26,7 +26,6 @@ export default function facebook() {
       <h2>Register</h2>
       <div className="input-section">
         <input
-          autoFocus
           type="text"
           className="username"
           placeholder="Enter Username"

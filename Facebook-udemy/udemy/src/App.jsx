@@ -1,24 +1,20 @@
-
-import './App.css'
-import Facebook from './components/facebook'
-import Login from "./components/login"
-import { BrowserRouter, Routes ,Route} from 'react-router-dom'
-
+import "./App.css";
+import Facebook from "./components/facebook";
+import Login from "./components/login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
- 
-
   return (
-<>
-    <BrowserRouter>
-<Routes>
-  <Route path='/login' index element ={<Login/>}>
-
-  </Route>
-  </Routes>
-    </BrowserRouter>
-    </> 
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Facebook />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

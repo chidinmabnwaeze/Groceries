@@ -31,6 +31,7 @@ const login = () => {
   return (
     <div className="login-form">
       <h2>Login</h2>
+    <p>kindly log in here</p>
 
       <form action="">
         <input

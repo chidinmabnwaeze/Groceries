@@ -1,9 +1,11 @@
 import { useState } from "react";
 import React from "react";
+import {useHistory } from "react-router-dom"
 
 const login = () => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
+  const history = useHistory
 
   function log() {
     const users = JSON.parse(localStorage.getItem("users"));
@@ -17,7 +19,9 @@ const login = () => {
     }
 
     if (i ==1) {
-      alert("Invalid Login");
+      alert("Login Successful");
+      history.push
+      localStorage.getItem("loggedIn")
     }
      else {
       alert("Invalid Login");

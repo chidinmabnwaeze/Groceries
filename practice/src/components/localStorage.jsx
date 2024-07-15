@@ -12,8 +12,14 @@ const [password, setPassword] = useState("")
 // e.preventDefault()
 // }
 
+
+
+
+
 function registerUser(){
-   alert("message") 
+   alert("new message")
+   
+   
 }
 
   return (

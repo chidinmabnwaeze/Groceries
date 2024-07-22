@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function body (){
-    return (
-        <div>
-            <h1>body component</h1>
-        </div>
-    )
+export default function body() {
+  useEffect(() => {}, []);
+
+  return (
+    <div>
+      <h1>body component</h1>
+    </div>
+  );
 }

@@ -1,5 +1,6 @@
 import React, {useEffect} from "react";
 import axios from 'axios'
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
 export default function body() {
   useEffect(() => {
@@ -17,6 +18,8 @@ export default function body() {
   return (
     <div>
       <h1>body component</h1>
+
+      <button className="btn btn-primary">A bootsrap button</button>
     </div>
   );
 }

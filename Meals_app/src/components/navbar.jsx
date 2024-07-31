@@ -11,7 +11,7 @@ const navbar = () => {
         <a style={{textDecoration: 'none', color: 'white'}} href="#">Contact Us</a>
 
     </div>
-    <h1 class="text-3xl font-bold underline text-red-500">
+    <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
     </div>

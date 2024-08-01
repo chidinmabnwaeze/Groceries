@@ -1,5 +1,6 @@
 import { data } from 'autoprefixer'
 import axios from 'axios'
+import React, {useState} from 'react'
 import './App.css'
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
   // .then((data)=> {
   //   console.log(data);
   // })
+
+  const [recipe , setRecipe] = useState("")
 
   axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
   .then((res)=>{

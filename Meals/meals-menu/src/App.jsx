@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-     <h1 className='text-4xl text-red-500'>Meals</h1>
+     <h1 className='text-4xl text-purple-500'>Meals</h1>
 
      
     </>

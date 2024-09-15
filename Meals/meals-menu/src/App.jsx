@@ -55,7 +55,7 @@ function App() {
      <tr>
       <th>Name</th>
       <th>Predicted Age</th>
-      <th>Count</th>
+      <th>Counts</th>
      </tr>
      <tr>
       <td>{predictedAge.name}</td>

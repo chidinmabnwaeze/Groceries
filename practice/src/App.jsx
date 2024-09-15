@@ -13,9 +13,9 @@ function App() {
 
   return (
     <>
-{/* <Practice/> */}
+<Practice/>
   <Content/>
-    {/* <Facebook/> */}
+    <Facebook/>
     <LocalStorage/>
     </>
   )

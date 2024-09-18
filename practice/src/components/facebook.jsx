@@ -7,18 +7,17 @@ const facebook = () => {
       id: 1,
       title: "delectus aut autem",
       completed: false,
-    }
+    },
   ]);
 
-let url = "https://jsonplaceholder.org/users/"
+  let url = "https://jsonplaceholder.org/users/";
 
-let userInfo ;
+  let userInfo;
 
-getAllUsers = async () =>{
-    users = await fetch(url).then((res) => res.json())
+  getAllUsers = async () => {
+    users = await fetch(url).then((res) => res.json());
     console.log(userInfo);
-}
-
+  };
 
   return (
     <div className="facebook">
@@ -32,7 +31,6 @@ getAllUsers = async () =>{
 
         {userTable.map((user, index) => {
           <tr className="table-body" key={index}>
-            
             <td>{user.id}</td>
             <td>{user.userId}</td>
             <td>{user.userId}</td>

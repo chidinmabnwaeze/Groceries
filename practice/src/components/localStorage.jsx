@@ -31,7 +31,7 @@ const localStorage = () => {
         <input
           type="text"
           placeholder="Enter your password"
-          className="form-controls"
+          className="form-control"
           value={password}
         />
         <input

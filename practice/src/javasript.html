@@ -1,7 +1,37 @@
 <html>
-    <script>
-        console.log("Hello World")
-    </script>
-    <h2>Javascript class</h2>
-    <h2>Javascript class</h2>
+<h2>Javascript class</h2>
+<h2>Javascript class</h2>
+<button class="cartButton" onclick="getbuttonText()">Add to Cart</button>
+<h2>Todo list</h2>
+<input type="text"
+placeholder="Input your todo"
+onchange="onchange()">
+<button>Add</button>
+<script>
+    console.log("Hello World")
+
+    let buttonText = "";
+    let getbuttonText = "";
+    function getbuttonText() {
+        document.querySelector(".cartButton").innerHTML = buttonText;
+        let html = "";
+        document.body.innerHTML = buttonText + html;
+
+        console.log(cartButton)
+
+    }
+function onchange(e){
+    e.preventDefault.value()
+    console.log(value)
+}
+let todo =[];
+function todolist(){
+    document.body.innerText = todo;
+    
+}
+
+
+
+</script>
+
 </html>
